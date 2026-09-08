@@ -2,41 +2,524 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#18332d">
-  <title>東京獨旅手札 2026</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#161714">
+  <meta name="description" content="2026 東京獨旅沉浸式翻頁手札：田端、青山、根津、麻布台、六本木、澀谷與橫濱。">
+  <title>東京獨旅手札 2026｜沉浸式城市展覽</title>
   <style>
-    :root{--ink:#24332f;--green:#18332d;--sage:#809388;--paper:#f5f0e6;--cream:#fffaf0;--red:#c95d4b;--gold:#d7aa55;--line:#d9d0bf;--shadow:0 12px 34px #18332d1a}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.75;background-image:linear-gradient(#ffffff20 1px,transparent 1px);background-size:100% 28px}
-    a{color:inherit}.wrap{width:min(920px,calc(100% - 28px));margin:auto}.hero{min-height:72vh;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#102721e8,#18332da6),url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1800&q=80') center/cover;position:relative;overflow:hidden}.hero:after{content:"東京・二〇二六";position:absolute;right:-30px;bottom:15px;font-family:serif;font-size:clamp(54px,10vw,130px);letter-spacing:.12em;color:#ffffff10;writing-mode:vertical-rl}.eyebrow{letter-spacing:.28em;text-transform:uppercase;color:#eed9a4;font-size:.78rem}.hero h1{font:700 clamp(42px,8vw,82px)/1.05 serif;margin:.25em 0}.hero p{max-width:580px;font-size:1.06rem}.stamp{display:inline-grid;place-items:center;border:2px solid #df806e;color:#ffd4cc;border-radius:50%;width:82px;height:82px;transform:rotate(-9deg);font:700 14px/1.25 serif;text-align:center;margin-top:24px}
-    nav{position:sticky;top:0;z-index:5;background:#fffdf8e8;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}nav .wrap{display:flex;gap:20px;overflow:auto;padding:11px 0;white-space:nowrap}nav a{text-decoration:none;font-size:.9rem}
-    section{padding:68px 0}.section-title{display:flex;gap:16px;align-items:center;margin-bottom:28px}.section-title span{font:700 42px/1 serif;color:var(--red)}h2{font:700 28px/1.2 serif;margin:0}.lead{font-size:1.08rem;max-width:700px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}.countdown div{background:var(--cream);border:1px solid var(--line);border-radius:14px;text-align:center;padding:18px 8px;box-shadow:var(--shadow)}.countdown b{display:block;font:700 30px/1 serif;color:var(--red)}.countdown small{color:#6e756f}
-    .card{background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}.hotel{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.tag{display:inline-block;background:#e7eee9;color:var(--green);border-radius:999px;padding:4px 10px;font-size:.78rem;margin:3px}.facts{display:grid;gap:8px;margin-top:15px}.fact{border-left:3px solid var(--gold);padding-left:12px}.warning{background:#fff1e6;border-left:4px solid var(--red);padding:15px;border-radius:8px}
-    .day{margin-bottom:34px}.day-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-end;border-bottom:2px solid var(--green);padding-bottom:12px}.day-head h3{font:700 24px/1.2 serif;margin:0}.route{color:#68736d;font-size:.88rem}.timeline{list-style:none;padding:0;margin:0}.timeline li{display:grid;grid-template-columns:90px 18px 1fr;gap:12px;padding:22px 0 0}.time{font-weight:700;color:var(--red)}.dot{position:relative}.dot:before{content:"";position:absolute;top:8px;left:5px;width:8px;height:8px;border-radius:50%;background:var(--gold)}.dot:after{content:"";position:absolute;top:20px;bottom:-28px;left:8px;width:1px;background:var(--line)}.timeline li:last-child .dot:after{display:none}.timeline h4{margin:0 0 3px;font-size:1.03rem}.timeline p{margin:0;color:#5f6964}.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.btn{display:inline-block;text-decoration:none;border:1px solid var(--green);border-radius:999px;padding:7px 13px;font-size:.84rem;background:#fff}.btn.primary{background:var(--green);color:#fff}
-    .tickets{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.ticket{position:relative;padding-left:54px}.ticket .n{position:absolute;left:18px;top:22px;font:700 28px/1 serif;color:var(--gold)}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.check{background:#fffdf8;border:1px solid var(--line);border-radius:12px;padding:13px;cursor:pointer}.check input{margin-right:9px;accent-color:var(--green)}.notes textarea{width:100%;min-height:180px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#fffefb;font:inherit;resize:vertical}.saved{font-size:.82rem;color:#68736d;text-align:right}.foot{text-align:center;padding:46px 0;color:#69736e;font-size:.85rem}
-    @media(max-width:650px){.hero{min-height:64vh}.hotel,.tickets,.checklist{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(2,1fr)}section{padding:52px 0}.timeline li{grid-template-columns:70px 16px 1fr;gap:8px}.card{padding:19px}.day-head{display:block}.route{margin-top:8px}}
+    :root {
+      --ink: #f4f1e9;
+      --paper: #eee9dd;
+      --dark: #171815;
+      --line: rgba(255,255,255,.32);
+      --accent: #efb84d;
+      --safe-bottom: max(24px, env(safe-area-inset-bottom));
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body {
+      background: var(--dark);
+      color: var(--ink);
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input, textarea { font: inherit; }
+    button { color: inherit; }
+
+    .reader {
+      position: relative;
+      width: 100%; height: 100%;
+      perspective: 1800px;
+      isolation: isolate;
+      background: #11120f;
+    }
+    .page {
+      position: absolute; inset: 0;
+      display: grid;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateZ(-10px);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      transition: opacity .55s ease, transform .9s cubic-bezier(.72,.01,.18,1);
+      background: #25251f;
+    }
+    .page.is-active { opacity: 1; visibility: visible; z-index: 3; transform: translateZ(0); }
+    .page.turn-out-next { visibility: visible; z-index: 5; opacity: 1; transform-origin: left center; transform: rotateY(-92deg); }
+    .page.turn-out-prev { visibility: visible; z-index: 5; opacity: 1; transform-origin: right center; transform: rotateY(92deg); }
+    .page.turn-in-next, .page.turn-in-prev { visibility: visible; opacity: 1; z-index: 2; }
+    .page::after {
+      content: "";
+      position: absolute; inset: 0;
+      pointer-events: none;
+      opacity: 0;
+      background: linear-gradient(90deg, rgba(238,233,221,.96), rgba(179,174,160,.92));
+      transform: translateZ(-1px) rotateY(180deg);
+      backface-visibility: hidden;
+    }
+    .page.turn-out-next::after, .page.turn-out-prev::after { opacity: 1; }
+
+    .photo, .photo-grid { position: absolute; inset: 0; }
+    .photo { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.03); }
+    .photo-grid { display: grid; grid-template-columns: 1.18fr .82fr; }
+    .photo-grid img { width: 100%; height: 100%; object-fit: cover; min-width: 0; }
+    .photo-grid img:last-child { border-left: 1px solid rgba(255,255,255,.45); }
+    .wash { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(9,10,8,.76) 0%, rgba(9,10,8,.18) 58%, rgba(9,10,8,.08) 100%); }
+    .wash-bottom { background: linear-gradient(0deg, rgba(7,8,7,.78), rgba(7,8,7,.05) 68%); }
+    .wash-center { background: radial-gradient(circle at 50% 50%, transparent 20%, rgba(8,9,8,.56) 110%); }
+
+    .chapter {
+      position: relative; z-index: 2;
+      width: min(740px, 70vw);
+      align-self: end;
+      margin: 0 7vw 13vh;
+      text-shadow: 0 2px 28px rgba(0,0,0,.45);
+    }
+    .eyebrow {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 18px;
+      font-size: 12px; font-weight: 700; letter-spacing: .19em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 36px; height: 1px; background: currentColor; opacity: .7; }
+    h1, h2, p { text-wrap: pretty; }
+    h1, h2 {
+      margin: 0;
+      font-family: "Songti TC", "Noto Serif TC", "PMingLiU", Georgia, serif;
+      font-weight: 500;
+      letter-spacing: .02em;
+    }
+    h1 { font-size: clamp(52px, 7.2vw, 112px); line-height: .99; max-width: 9ch; }
+    h2 { font-size: clamp(42px, 5.1vw, 78px); line-height: 1.05; }
+    .lede { margin: 24px 0 0; max-width: 54ch; font-size: clamp(16px, 1.3vw, 20px); line-height: 1.8; }
+    .stamp { margin-top: 28px; font-size: 13px; letter-spacing: .12em; opacity: .78; }
+    .start {
+      margin-top: 36px;
+      width: fit-content; min-height: 48px; padding: 0 22px;
+      border: 1px solid rgba(255,255,255,.72); border-radius: 0;
+      background: rgba(16,17,14,.12); backdrop-filter: blur(10px);
+      cursor: pointer; transition: background .2s, color .2s;
+    }
+    .start:hover, .start:focus-visible { background: var(--ink); color: #161714; outline: none; }
+    .actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 19px; }
+    .action {
+      display: inline-flex; min-height: 44px; align-items: center; padding: 0 15px;
+      border: 1px solid rgba(255,255,255,.64); color: inherit; background: rgba(12,13,11,.22);
+      text-decoration: none; font-size: 12px; letter-spacing: .05em; backdrop-filter: blur(10px);
+      transition: background .2s, color .2s;
+    }
+    .action:hover, .action:focus-visible { background: var(--ink); color: #171815; outline: none; }
+    .paper-page .action { border-color: #77756c; background: transparent; }
+    .paper-page .action:hover, .paper-page .action:focus-visible { background: #252721; color: #f4f1e9; }
+
+    .museum-label {
+      position: relative; z-index: 2;
+      align-self: end; justify-self: end;
+      width: min(410px, 34vw); margin: 0 7vw 13vh;
+      padding: 26px 28px 24px;
+      color: #171815; background: rgba(244,241,233,.95);
+      box-shadow: 0 20px 60px rgba(0,0,0,.24);
+    }
+    .museum-label small { display: block; font-size: 11px; letter-spacing: .17em; text-transform: uppercase; color: #69685f; }
+    .museum-label h2 { margin: 9px 0 14px; font-size: clamp(29px, 3vw, 48px); line-height: 1.12; }
+    .museum-label p { margin: 0; color: #3c3d37; font-size: 15px; line-height: 1.75; }
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 22px; padding-top: 18px; border-top: 1px solid #bcb8ad; }
+    .facts b { display: block; font-size: 13px; margin-bottom: 4px; }
+    .facts span { font-size: 12px; color: #62625c; line-height: 1.5; }
+
+    .caption {
+      position: absolute; z-index: 2; top: 8vh; left: 7vw;
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 14px;
+      font-size: 12px; letter-spacing: .09em;
+      background: rgba(17,18,15,.48); backdrop-filter: blur(12px);
+    }
+    .caption strong { color: var(--accent); }
+    .pin {
+      position: absolute; z-index: 2; max-width: 330px;
+      padding: 17px 20px; background: rgba(16,17,14,.76); backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(255,255,255,.5);
+    }
+    .pin h3 { margin: 0 0 7px; font: 500 24px/1.2 "Songti TC", "Noto Serif TC", serif; }
+    .pin p { margin: 0; font-size: 14px; line-height: 1.65; color: rgba(255,255,255,.82); }
+    .pin-a { left: 7vw; bottom: 15vh; }
+    .pin-b { right: 7vw; top: 15vh; }
+
+    .split-copy {
+      position: relative; z-index: 2; height: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; align-items: end;
+      padding: 8vh 7vw 13vh;
+    }
+    .split-copy .chapter { width: auto; margin: 0; }
+    .split-copy .museum-label { width: min(400px, 85%); margin: 0; justify-self: end; }
+
+    .paper-page { background: #e8e2d4; color: #1e211d; }
+    .paper-layout {
+      position: relative; z-index: 2; width: min(1180px, 86vw); height: min(680px, 76vh);
+      margin: auto; display: grid; grid-template-columns: .82fr 1.18fr;
+      border-top: 1px solid #908b7f; border-bottom: 1px solid #908b7f;
+    }
+    .paper-copy { padding: 7vh 6vw 5vh 0; display: flex; flex-direction: column; justify-content: space-between; }
+    .paper-copy h2 { font-size: clamp(42px, 5vw, 76px); }
+    .paper-copy p { max-width: 35ch; font-size: 16px; line-height: 1.85; color: #43463f; }
+    .route { display: grid; gap: 0; margin-top: 22px; }
+    .route-item { display: grid; grid-template-columns: 62px 1fr; gap: 14px; padding: 13px 0; border-top: 1px solid #b9b3a5; }
+    .route-item time { color: #74766e; font-size: 12px; }
+    .route-item span { font-size: 14px; }
+    .paper-image { position: relative; overflow: hidden; margin: 4vh 0 4vh; }
+    .paper-image img { width: 100%; height: 100%; object-fit: cover; }
+    .paper-image figcaption { position: absolute; right: 14px; bottom: 12px; padding: 8px 10px; font-size: 11px; background: rgba(240,235,223,.92); }
+
+    .appendix {
+      position: relative; z-index: 2; width: min(1120px, 86vw); height: min(690px, 78vh); margin: auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: clamp(38px, 6vw, 90px);
+    }
+    .appendix h2 { font-size: clamp(38px, 4.6vw, 70px); }
+    .appendix .intro { margin: 15px 0 26px; max-width: 40ch; color: #55574f; line-height: 1.7; }
+    .tasks { border-top: 1px solid #a9a496; }
+    .task { display: grid; grid-template-columns: 32px 1fr auto; gap: 14px; align-items: center; padding: 17px 0; border-bottom: 1px solid #c0baad; }
+    .task input { width: 22px; height: 22px; accent-color: #282a25; }
+    .task label { font-size: 15px; cursor: pointer; }
+    .task small { color: #6f7069; font-size: 11px; }
+    .task:has(input:checked) label { text-decoration: line-through; color: #777970; }
+    textarea {
+      width: 100%; height: 240px; resize: none; padding: 22px;
+      border: 1px solid #999486; border-radius: 0; background: rgba(255,255,255,.24); color: #22241f;
+      font: 17px/1.9 "Songti TC", "Noto Serif TC", serif;
+    }
+    textarea:focus { outline: 2px solid #585a52; outline-offset: 3px; }
+    .save-note { margin-top: 10px; font-size: 12px; color: #6a6c64; }
+    .credits { margin-top: 26px; font-size: 11px; line-height: 1.65; color: #74766d; }
+
+    .topbar, .controls {
+      position: absolute; z-index: 20; left: 0; right: 0;
+      display: flex; align-items: center;
+      transition: opacity .45s ease;
+    }
+    .topbar { top: 0; justify-content: space-between; padding: max(20px, env(safe-area-inset-top)) 3vw 0; }
+    .brand { font-family: Georgia, serif; font-size: 13px; letter-spacing: .14em; }
+    .chapter-name { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; opacity: .76; }
+    .controls { bottom: 0; justify-content: center; gap: 18px; padding: 0 3vw var(--safe-bottom); }
+    .nav-button {
+      width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%;
+      background: rgba(15,16,14,.38); backdrop-filter: blur(12px); cursor: pointer;
+      font-size: 20px; transition: background .2s, border-color .2s, opacity .2s;
+    }
+    .nav-button:hover, .nav-button:focus-visible { background: rgba(244,241,233,.18); border-color: rgba(255,255,255,.82); outline: none; }
+    .nav-button:disabled { opacity: .28; cursor: default; }
+    .progress { width: min(260px, 38vw); height: 1px; background: rgba(255,255,255,.28); }
+    .progress span { display: block; width: 0; height: 100%; background: white; transition: width .6s ease; }
+    .counter { min-width: 48px; font: 12px/1 Georgia, serif; letter-spacing: .1em; }
+    .reader.is-light .topbar, .reader.is-light .controls { color: #252721; }
+    .reader.is-light .progress { background: rgba(25,27,23,.22); }
+    .reader.is-light .progress span { background: #252721; }
+    .reader.is-light .nav-button { border-color: rgba(25,27,23,.32); background: rgba(232,226,212,.6); }
+    .reader.is-idle .topbar, .reader.is-idle .controls { opacity: .18; }
+    .reader.is-idle:hover .topbar, .reader.is-idle:hover .controls,
+    .reader:focus-within .topbar, .reader:focus-within .controls { opacity: 1; }
+
+    .swipe-hint { display: none; }
+
+    @media (max-width: 760px) {
+      .photo-grid { grid-template-columns: 1fr; grid-template-rows: 1.08fr .92fr; }
+      .photo-grid img:last-child { border-left: 0; border-top: 1px solid rgba(255,255,255,.45); }
+      .chapter { width: auto; margin: 0 24px 116px; }
+      h1 { font-size: clamp(48px, 16vw, 72px); }
+      h2 { font-size: clamp(37px, 11vw, 54px); }
+      .lede { font-size: 16px; line-height: 1.7; }
+      .caption { top: 78px; left: 18px; max-width: calc(100% - 36px); }
+      .museum-label { width: calc(100% - 36px); max-height: 50vh; margin: 0 18px 96px; padding: 20px; }
+      .museum-label h2 { font-size: 31px; }
+      .museum-label p { font-size: 14px; line-height: 1.6; }
+      .facts { margin-top: 14px; padding-top: 13px; }
+      .pin { max-width: calc(100% - 36px); }
+      .pin-a { left: 18px; bottom: 100px; }
+      .pin-b { right: 18px; top: 88px; }
+      .split-copy { display: block; padding: 0; }
+      .split-copy .chapter { position: absolute; left: 24px; right: 24px; bottom: 104px; margin: 0; }
+      .split-copy .museum-label { position: absolute; left: 18px; right: 18px; bottom: 92px; margin: 0; width: auto; }
+      .paper-layout { width: 100%; height: 100%; display: block; border: 0; }
+      .paper-copy { position: relative; z-index: 2; height: 58%; padding: 94px 24px 18px; background: linear-gradient(#e8e2d4 78%, transparent); }
+      .paper-copy h2 { font-size: 45px; }
+      .paper-copy p { margin: 12px 0; font-size: 15px; line-height: 1.6; }
+      .route { margin-top: 4px; }
+      .route-item { padding: 8px 0; }
+      .paper-image { position: absolute; inset: 46% 0 0; margin: 0; }
+      .appendix { width: auto; height: auto; inset: 76px 22px 90px; position: absolute; display: block; overflow: auto; padding-right: 3px; }
+      .appendix h2 { font-size: 42px; }
+      .appendix .intro { font-size: 14px; margin-bottom: 18px; }
+      .appendix section + section { margin-top: 40px; }
+      .task { padding: 13px 0; }
+      .task small { display: none; }
+      textarea { height: 180px; font-size: 16px; }
+      .topbar { padding-left: 20px; padding-right: 20px; }
+      .chapter-name { display: none; }
+      .controls { justify-content: space-between; padding-left: 20px; padding-right: 20px; }
+      .progress { flex: 1; }
+      .reader.is-idle .topbar, .reader.is-idle .controls { opacity: .46; }
+      .swipe-hint { display: block; margin-top: 15px; font-size: 11px; opacity: .74; }
+      .actions { margin-top: 13px; }
+      .action { min-height: 44px; padding: 0 13px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page { transition: opacity .18s linear; transform: none !important; }
+      .progress span { transition: none; }
+    }
   </style>
 </head>
 <body>
-  <header class="hero"><div class="wrap"><div class="eyebrow">Solo travel journal · 2026</div><h1>東京獨旅手札</h1><p>從田端出發，沿著秋色、建築、設計與遊戲文化，走一條只屬於自己的東京路線。最後帶著故事，前往橫濱登船。</p><div class="stamp">十一月<br>東京</div></div></header>
-  <nav><div class="wrap"><a href="#overview">旅程</a><a href="#stay">住宿</a><a href="#days">每日手札</a><a href="#tickets">票券</a><a href="#todo">行前待辦</a><a href="#notes">我的筆記</a></div></nav>
-  <main>
-    <section id="overview"><div class="wrap"><div class="section-title"><span>01</span><h2>出發倒數</h2></div><p class="lead">2026/11/18 高雄出發，東京停留三晚；11/21 前往橫濱，登上 MSC Bellissima。</p><div class="countdown"><div><b id="d">--</b><small>天</small></div><div><b id="h">--</b><small>小時</small></div><div><b id="m">--</b><small>分鐘</small></div><div><b id="s">--</b><small>秒</small></div></div></div></section>
-    <section id="stay"><div class="wrap"><div class="section-title"><span>02</span><h2>旅途中繼站</h2></div><div class="hotel"><article class="card"><div class="eyebrow" style="color:var(--red)">TABATA · TOKYO</div><h3>Tabist 東京城市景觀飯店</h3><p>三晚都以田端為基地。從成田搭 Skyliner 到日暮里，再轉 JR 一站；前往東京市區的動線簡單。</p><span class="tag">JR 山手線</span><span class="tag">全館禁菸</span><span class="tag">2025 翻新</span><span class="tag">人工鐳溫泉</span><div class="facts"><div class="fact">入住：11/18　退房：11/21</div><div class="fact">單人房約 11㎡，私人衛浴</div><div class="fact">田端站南口約 2 分鐘</div></div><div class="links"><a class="btn primary" target="_blank" href="https://maps.google.com/?q=Tabist+Tokyo+City+View+Hotel">開啟地圖</a></div></article><aside class="card"><h3>帶大行李請注意</h3><p class="warning">南口雖然最近，但沒有電梯，還有樓梯與坡道。帶郵輪大行李時，建議走北口，路線較平坦。</p><p>11/21 不排正式景點，慢慢退房、午餐後再前往最終確認的 MSC 碼頭。</p></aside></div></div></section>
-    <section id="days"><div class="wrap"><div class="section-title"><span>03</span><h2>每日手札</h2></div>
-      <article class="day card"><div class="day-head"><h3>11/18（三）｜抵達東京</h3><div class="route">高雄 → 成田 → 日暮里 → 田端</div></div><ul class="timeline"><li><div class="time">14:00</div><div class="dot"></div><div><h4>GK18 高雄起飛</h4><p>保留體力給入境與移動。</p></div></li><li><div class="time">18:30</div><div class="dot"></div><div><h4>抵達成田</h4><p>入境、領行李，預留約一小時。</p></div></li><li><div class="time">19:30+</div><div class="dot"></div><div><h4>前往田端</h4><p>Skyliner 至日暮里，再轉 JR 一站。入住後只安排附近晚餐。</p><div class="links"><a class="btn" target="_blank" href="https://www.google.com/maps/dir/Narita+International+Airport/Tabata+Station">查看路線</a></div></div></li></ul></article>
-      <article class="day card"><div class="day-head"><h3>11/19（四）｜秋色 × 建築 × 遊戲文化</h3><div class="route">外苑 → 青山／表參道 → 根津 → 澀谷 → 代官山</div></div><ul class="timeline"><li><div class="time">07:45</div><div class="dot"></div><div><h4>神宮外苑銀杏並木</h4><p>早到避開人潮，留 60–75 分鐘感受清晨秋色。</p></div></li><li><div class="time">09:15</div><div class="dot"></div><div><h4>青山・表參道建築散步</h4><p>Omotesando Hills → PRADA 青山 → Spiral，觀察品牌與空間如何說故事。</p></div></li><li><div class="time">13:15</div><div class="dot"></div><div><h4>根津美術館</h4><p>看展、庭園，並停留到 15:00–16:00 的「閑中庵・牛部屋」茶室特別開放。</p><div class="links"><a class="btn" target="_blank" href="https://www.nezu-muse.or.jp/">官方網站</a><a class="btn" target="_blank" href="https://maps.google.com/?q=Nezu+Museum">地圖</a></div></div></li><li><div class="time">16:45</div><div class="dot"></div><div><h4>Shibuya PARCO</h4><p>Nintendo TOKYO、Pokémon、CAPCOM；把 6F 當成一場遊戲 IP 的實體策展。</p></div></li><li><div class="time">20:20</div><div class="dot"></div><div><h4>代官山 T-SITE（彈性）</h4><p>有體力再去；累了就從澀谷回田端。</p></div></li></ul></article>
-      <article class="day card"><div class="day-head"><h3>11/20（五）｜沉浸 × 設計 × 東京夕陽</h3><div class="route">麻布台 → 六本木 → 澀谷</div></div><ul class="timeline"><li><div class="time">08:30</div><div class="dot"></div><div><h4>teamLab Borderless 第一場</h4><p>預留 2 小時 45 分鐘；下載官方 App，觀察無地圖的探索與轉場設計。</p><div class="links"><a class="btn" target="_blank" href="https://www.teamlab.art/e/tokyo/">官方網站</a></div></div></li><li><div class="time">11:15</div><div class="dot"></div><div><h4>麻布台 Hills ＋ 午餐</h4><p>散步、看公共空間，午餐後搭日比谷線前往六本木。</p></div></li><li><div class="time">13:00</div><div class="dot"></div><div><h4>21_21 DESIGN SIGHT</h4><p>看《方丈記》主題展；11/20 是接續三天休館前的最後開放日。</p><div class="links"><a class="btn" target="_blank" href="https://www.2121designsight.jp/">官方網站</a></div></div></li><li><div class="time">15:20</div><div class="dot"></div><div><h4>SHIBUYA SKY</h4><p>目標 15:20–15:40 入場：白天 → 16:32 日落 → Blue Hour → 夜景。</p><div class="links"><a class="btn primary" target="_blank" href="https://www.shibuya-scramble-square.com/sky/ticket/">購票頁</a></div></div></li><li><div class="time">17:45+</div><div class="dot"></div><div><h4>澀谷自由散步與晚餐</h4><p>不再塞正式景點，替這趟東京留一段沒有任務的時間。</p></div></li></ul></article>
-      <article class="day card"><div class="day-head"><h3>11/21（六）｜前往 MSC Bellissima</h3><div class="route">田端 → 橫濱 → 郵輪碼頭</div></div><ul class="timeline"><li><div class="time">09:00</div><div class="dot"></div><div><h4>早餐與最後採買</h4><p>不排行程，整理郵輪行李。</p></div></li><li><div class="time">11:00</div><div class="dot"></div><div><h4>退房、往橫濱移動</h4><p>抵達後先午餐；最終碼頭與接駁依 MSC 船票為準。</p></div></li><li><div class="time">14:00</div><div class="dot"></div><div><h4>開始 Check-in</h4><p>提早上船、找房間並熟悉船內。</p></div></li><li><div class="time">19:00</div><div class="dot"></div><div><h4>啟航</h4><p>11/22–25 展開郵輪航程。</p></div></li></ul></article>
-    </div></section>
-    <section id="tickets"><div class="wrap"><div class="section-title"><span>04</span><h2>搶票順序</h2></div><div class="tickets"><article class="card ticket"><span class="n">1</span><h3>SHIBUYA SKY</h3><p>11/20，優先 15:20 或 15:40。約 11/6 開始盯票。</p></article><article class="card ticket"><span class="n">2</span><h3>teamLab Borderless</h3><p>11/20，直接選 08:30 第一場。</p></article><article class="card ticket"><span class="n">3</span><h3>根津美術館</h3><p>11/19，約 13:00–13:30 入館，待到茶室開放。</p></article><article class="card ticket"><span class="n">4</span><h3>21_21 DESIGN SIGHT</h3><p>11/20，13:00 左右，預留 1.5–2 小時。</p></article></div></div></section>
-    <section id="todo"><div class="wrap"><div class="section-title"><span>05</span><h2>行前待辦</h2></div><div class="checklist" id="checks"><label class="check"><input type="checkbox">確認護照與 Visit Japan Web</label><label class="check"><input type="checkbox">下載 Suica／準備交通卡</label><label class="check"><input type="checkbox">購買 SHIBUYA SKY 票</label><label class="check"><input type="checkbox">購買 teamLab 第一場</label><label class="check"><input type="checkbox">購買根津美術館票</label><label class="check"><input type="checkbox">下載 teamLab App</label><label class="check"><input type="checkbox">確認 MSC 最終碼頭與接駁</label><label class="check"><input type="checkbox">準備防風外套與行動電源</label></div></div></section>
-    <section id="notes"><div class="wrap notes"><div class="section-title"><span>06</span><h2>我的旅行筆記</h2></div><textarea id="memo" placeholder="想吃的店、票券編號、臨時靈感……會自動儲存在這台裝置。"></textarea><div class="saved" id="saved">尚未輸入</div></div></section>
+  <main class="reader" id="reader" aria-live="polite">
+    <header class="topbar">
+      <div class="brand">TOKYO / 2026</div>
+      <div class="chapter-name" id="chapterName">序章 · 出發前夜</div>
+    </header>
+
+    <section class="page is-active" data-title="序章 · 出發前夜" aria-label="封面">
+      <img class="photo" src="assets/shibuya.jpg" alt="從 SHIBUYA SKY 望向東京城市景觀">
+      <div class="wash wash-center"></div>
+      <div class="chapter">
+        <div class="eyebrow">A solitary week in Tokyo</div>
+        <h1>東京<br>獨旅手札</h1>
+        <p class="lede">把七天折進一本可以慢慢翻閱的城市展覽。秋色、建築、光與啟航，都從這一頁開始。</p>
+        <div class="stamp">2026.11.18 — 11.25</div>
+        <button class="start" type="button" data-next>開始翻閱　→</button>
+        <div class="swipe-hint">也可以向左滑動翻頁</div>
+      </div>
+    </section>
+
+    <section class="page paper-page" data-title="第一章 · 抵達" aria-label="旅程總覽與住宿">
+      <div class="paper-layout">
+        <div class="paper-copy">
+          <div>
+            <div class="eyebrow">01 / Arrival</div>
+            <h2>先抵達，<br>再讓城市展開</h2>
+            <p>從高雄飛往成田。前三晚住在田端，換一個安靜的生活節奏；帶大行李時，記得走田端站北口。</p>
+            <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Narita+International+Airport/Tabata+Station">成田 → 田端路線</a><a class="action" target="_blank" rel="noopener" href="https://maps.google.com/?q=Tabist+Tokyo+City+View+Hotel">飯店地圖</a></div>
+          </div>
+          <div class="route">
+            <div class="route-item"><time>11/18</time><span>高雄 → 成田 → 田端</span></div>
+            <div class="route-item"><time>3 nights</time><span>田端 · 東京北側的日常入口</span></div>
+            <div class="route-item"><time>11/21</time><span>退房後前往橫濱，準備登船</span></div>
+          </div>
+        </div>
+        <figure class="paper-image">
+          <img src="assets/ginkgo.jpg" alt="明治神宮外苑的銀杏並木">
+          <figcaption>第一個期待：銀杏季的東京</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="page" data-title="第二章 · 秋色與文化" aria-label="11月19日行程">
+      <div class="photo-grid">
+        <img src="assets/ginkgo.jpg" alt="明治神宮外苑銀杏並木">
+        <img src="assets/nezu.jpg" alt="根津美術館庭園">
+      </div>
+      <div class="wash wash-bottom"></div>
+      <div class="split-copy">
+        <div class="chapter">
+          <div class="eyebrow">02 / Nov. 19</div>
+          <h2>秋色，<br>沿著青山漫開</h2>
+          <p class="lede">07:45 神宮外苑銀杏 → 09:15 青山與表參道建築散步 → 13:15 根津美術館與茶室。16:45 後再把城市速度調快，往澀谷 PARCO 與代官山。</p>
+          <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://maps.google.com/?q=Meiji+Jingu+Gaien+Ginkgo+Avenue">銀杏地圖</a><a class="action" target="_blank" rel="noopener" href="https://maps.google.com/?q=Nezu+Museum">根津地圖</a></div>
+        </div>
+        <aside class="museum-label">
+          <small>Field note</small>
+          <h2>根津美術館</h2>
+          <p>庭園不是景點之後的附錄，而是這天的呼吸段落。把時間留給茶室與樹影。</p>
+          <div class="facts"><div><b>上午</b><span>先看銀杏，人潮較柔和</span></div><div><b>午後</b><span>青山步行銜接根津</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page" data-title="第三章 · 沉浸與設計" aria-label="11月20日上午行程">
+      <img class="photo" src="assets/teamlab.jpg" alt="teamLab Borderless 麻布台 Hills 的沉浸式光影展覽">
+      <div class="wash"></div>
+      <div class="caption"><strong>11.20</strong><span>麻布台 Hills · 光成為可行走的空間</span></div>
+      <div class="chapter">
+        <div class="eyebrow">03 / Borderless</div>
+        <h2>在沒有邊界的光裡，<br>失去時間</h2>
+        <p class="lede">08:30 teamLab Borderless 第一場。讓影像主導，不急著記錄；11:15 逛麻布台並午餐，13:00 再走向 21_21 DESIGN SIGHT，把感官收束成設計。</p>
+        <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.teamlab.art/e/tokyo/">teamLab 官方網站</a><a class="action" target="_blank" rel="noopener" href="https://maps.google.com/?q=teamLab+Borderless+Azabudai+Hills">開啟地圖</a></div>
+      </div>
+    </section>
+
+    <section class="page" data-title="第四章 · 設計與夕陽" aria-label="11月20日下午與傍晚行程">
+      <img class="photo" src="assets/2121.jpg" alt="21_21 DESIGN SIGHT 建築外觀">
+      <div class="wash wash-bottom"></div>
+      <div class="pin pin-b">
+        <h3>21_21 DESIGN SIGHT</h3>
+        <p>把安藤忠雄的低矮屋頂，當成前往城市高處之前的伏筆。</p>
+      </div>
+      <div class="chapter">
+        <div class="eyebrow">04 / Nov. 20 · PM</div>
+        <h2>從地面設計，<br>走到城市天際</h2>
+        <p class="lede">13:00 六本木的設計午後，接上 15:20–15:40 SHIBUYA SKY 夕陽入場時段。這張票是整趟行程的第一順位。</p>
+        <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.2121designsight.jp/">21_21 官方網站</a><a class="action" target="_blank" rel="noopener" href="https://www.shibuya-scramble-square.com/sky/ticket/">SHIBUYA SKY 購票</a></div>
+      </div>
+    </section>
+
+    <section class="page" data-title="第五章 · 澀谷日落" aria-label="SHIBUYA SKY 夕陽與夜間散步">
+      <img class="photo" src="assets/shibuya.jpg" alt="SHIBUYA SKY 所見東京天際線與夕陽">
+      <div class="wash wash-bottom"></div>
+      <div class="caption"><strong>Priority 01</strong><span>SHIBUYA SKY · 建議鎖定日落前入場</span></div>
+      <div class="chapter">
+        <div class="eyebrow">05 / Golden hour</div>
+        <h2>讓白天在這裡，<br>翻成夜晚</h2>
+        <p class="lede">15:20–15:40 入場，先看白天東京，再等 16:32 日落、Blue Hour 與夜景。下樓後不急著回去，留一段沒有目的地的澀谷夜間散步。</p>
+        <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.shibuya-scramble-square.com/sky/ticket/">開啟官方購票頁</a><a class="action" target="_blank" rel="noopener" href="https://maps.google.com/?q=SHIBUYA+SKY">開啟地圖</a></div>
+      </div>
+    </section>
+
+    <section class="page paper-page" data-title="終章 · 啟航" aria-label="11月21日登船行程">
+      <div class="paper-layout">
+        <div class="paper-copy">
+          <div>
+            <div class="eyebrow">06 / Nov. 21</div>
+            <h2>城市停靠，<br>海上旅程開始</h2>
+            <p>退房後移動至橫濱，吃一頓不匆忙的午餐，再前往 MSC Check-in。今天的重點不是排滿，而是準時、從容地啟航。</p>
+          </div>
+          <div class="route">
+            <div class="route-item"><time>AM</time><span>田端退房 · 再確認行李</span></div>
+            <div class="route-item"><time>NOON</time><span>橫濱午餐 · 預留港區移動時間</span></div>
+            <div class="route-item"><time>PM</time><span>MSC Check-in · 啟航</span></div>
+          </div>
+        </div>
+        <figure class="paper-image">
+          <img src="assets/nezu.jpg" alt="根津美術館庭園的水面與樹影">
+          <figcaption>離開東京前，記住一段安靜</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="page paper-page" data-title="附錄 · 票券與筆記" aria-label="票券清單與個人筆記">
+      <div class="appendix">
+        <section>
+          <div class="eyebrow">Appendix A</div>
+          <h2>先把期待，<br>換成票券</h2>
+          <p class="intro">勾選內容會保存在這台裝置。購票順序已依行程風險排列。</p>
+          <div class="tasks">
+            <div class="task"><input id="t1" type="checkbox"><label for="t1">SHIBUYA SKY 夕陽時段</label><small>PRIORITY 01</small></div>
+            <div class="task"><input id="t2" type="checkbox"><label for="t2">teamLab Borderless</label><small>PRIORITY 02</small></div>
+            <div class="task"><input id="t3" type="checkbox"><label for="t3">根津美術館</label><small>PRIORITY 03</small></div>
+            <div class="task"><input id="t4" type="checkbox"><label for="t4">21_21 DESIGN SIGHT</label><small>PRIORITY 04</small></div>
+          </div>
+          <div class="actions"><a class="action" target="_blank" rel="noopener" href="https://www.shibuya-scramble-square.com/sky/ticket/">SHIBUYA SKY</a><a class="action" target="_blank" rel="noopener" href="https://www.teamlab.art/e/tokyo/">teamLab</a><a class="action" target="_blank" rel="noopener" href="https://www.nezu-muse.or.jp/">根津美術館</a></div>
+        </section>
+        <section>
+          <div class="eyebrow">Appendix B</div>
+          <h2>留給旅途的<br>空白頁</h2>
+          <p class="intro">臨時想到的店、想帶走的東西，或只屬於自己的小提醒。</p>
+          <label for="notes" style="position:absolute;width:1px;height:1px;overflow:hidden">個人旅行筆記</label>
+          <textarea id="notes" placeholder="在這裡寫下旅行筆記……"></textarea>
+          <div class="save-note" id="saveNote">內容會自動保存在這台裝置</div>
+          <div class="credits">照片：Hiroaki Kaneko、Reinhold Möller (Ermell)、Joli Rumi（CC BY-SA 4.0）、DannyWithLove、Wikimedia Commons。<a href="PHOTO-CREDITS.md" target="_blank">查看完整來源與授權</a>。</div>
+        </section>
+      </div>
+    </section>
+
+    <nav class="controls" aria-label="翻頁控制">
+      <button class="nav-button" id="prev" type="button" aria-label="上一頁">←</button>
+      <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+      <div class="counter" id="counter">01 / 08</div>
+      <button class="nav-button" id="next" type="button" aria-label="下一頁">→</button>
+    </nav>
   </main>
-  <footer class="foot">TOKYO SOLO JOURNAL · 18–25 NOV 2026</footer>
+
   <script>
-    const target=new Date('2026-11-18T14:00:00+08:00');function tick(){let x=Math.max(0,target-new Date()),q=Math.floor(x/1000);d.textContent=Math.floor(q/86400);h.textContent=String(Math.floor(q%86400/3600)).padStart(2,'0');m.textContent=String(Math.floor(q%3600/60)).padStart(2,'0');s.textContent=String(q%60).padStart(2,'0')}tick();setInterval(tick,1000);
-    const inputs=[...document.querySelectorAll('#checks input')],memo=document.querySelector('#memo'),saved=document.querySelector('#saved');try{let state=JSON.parse(localStorage.getItem('tokyo-checks')||'[]');inputs.forEach((x,i)=>x.checked=!!state[i]);memo.value=localStorage.getItem('tokyo-memo')||''}catch(e){}inputs.forEach(x=>x.addEventListener('change',()=>localStorage.setItem('tokyo-checks',JSON.stringify(inputs.map(x=>x.checked)))));let timer;memo.addEventListener('input',()=>{clearTimeout(timer);saved.textContent='儲存中…';timer=setTimeout(()=>{localStorage.setItem('tokyo-memo',memo.value);saved.textContent='已自動儲存'},350)});
+    (() => {
+      const pages = [...document.querySelectorAll('.page')];
+      const reader = document.getElementById('reader');
+      const prevButton = document.getElementById('prev');
+      const nextButton = document.getElementById('next');
+      const counter = document.getElementById('counter');
+      const progressBar = document.getElementById('progressBar');
+      const chapterName = document.getElementById('chapterName');
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let index = Math.min(Math.max(Number(localStorage.getItem('tokyo-book-page')) || 0, 0), pages.length - 1);
+      let turning = false;
+      let touchStartX = 0;
+      let idleTimer;
+
+      function updateChrome() {
+        counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(pages.length).padStart(2, '0')}`;
+        progressBar.style.width = `${((index + 1) / pages.length) * 100}%`;
+        chapterName.textContent = pages[index].dataset.title;
+        prevButton.disabled = index === 0;
+        nextButton.disabled = index === pages.length - 1;
+        reader.classList.toggle('is-light', pages[index].classList.contains('paper-page'));
+        localStorage.setItem('tokyo-book-page', String(index));
+      }
+
+      function turn(target) {
+        if (turning || target < 0 || target >= pages.length || target === index) return;
+        turning = true;
+        const oldIndex = index;
+        const direction = target > oldIndex ? 'next' : 'prev';
+        const oldPage = pages[oldIndex];
+        const newPage = pages[target];
+        newPage.classList.add(`turn-in-${direction}`);
+        newPage.setAttribute('aria-hidden', 'false');
+        requestAnimationFrame(() => {
+          oldPage.classList.add(`turn-out-${direction}`);
+          oldPage.classList.remove('is-active');
+          newPage.classList.add('is-active');
+          index = target;
+          updateChrome();
+        });
+        window.setTimeout(() => {
+          oldPage.classList.remove(`turn-out-${direction}`);
+          oldPage.setAttribute('aria-hidden', 'true');
+          newPage.classList.remove(`turn-in-${direction}`);
+          turning = false;
+        }, reduceMotion ? 220 : 940);
+      }
+
+      function resetIdle() {
+        reader.classList.remove('is-idle');
+        clearTimeout(idleTimer);
+        idleTimer = setTimeout(() => reader.classList.add('is-idle'), 2800);
+      }
+
+      pages.forEach((page, i) => {
+        page.classList.toggle('is-active', i === index);
+        page.setAttribute('aria-hidden', i === index ? 'false' : 'true');
+      });
+      updateChrome();
+      resetIdle();
+
+      prevButton.addEventListener('click', () => turn(index - 1));
+      nextButton.addEventListener('click', () => turn(index + 1));
+      document.querySelectorAll('[data-next]').forEach(button => button.addEventListener('click', () => turn(index + 1)));
+      window.addEventListener('keydown', event => {
+        if (event.target.matches('textarea,input')) return;
+        if (event.key === 'ArrowRight' || event.key === 'PageDown') turn(index + 1);
+        if (event.key === 'ArrowLeft' || event.key === 'PageUp') turn(index - 1);
+      });
+      reader.addEventListener('touchstart', event => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+      reader.addEventListener('touchend', event => {
+        const delta = event.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) > 54) turn(index + (delta < 0 ? 1 : -1));
+      }, { passive: true });
+      ['mousemove', 'pointerdown', 'keydown', 'touchstart'].forEach(name => window.addEventListener(name, resetIdle, { passive: true }));
+
+      document.querySelectorAll('.task input').forEach(input => {
+        input.checked = localStorage.getItem(`tokyo-${input.id}`) === '1';
+        input.addEventListener('change', () => localStorage.setItem(`tokyo-${input.id}`, input.checked ? '1' : '0'));
+      });
+      const notes = document.getElementById('notes');
+      const saveNote = document.getElementById('saveNote');
+      let noteTimer;
+      notes.value = localStorage.getItem('tokyo-travel-notes') || '';
+      notes.addEventListener('input', () => {
+        clearTimeout(noteTimer);
+        saveNote.textContent = '儲存中……';
+        noteTimer = setTimeout(() => {
+          localStorage.setItem('tokyo-travel-notes', notes.value);
+          saveNote.textContent = '已自動保存';
+        }, 350);
+      });
+    })();
   </script>
 </body>
 </html>
